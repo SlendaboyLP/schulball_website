@@ -17,7 +17,10 @@ export default function Footer() {
         }}
       />
 
-      <p className="mr-8 text-mainWhite font-franklin font-black hover:cursor-pointer hover:text-mainGold hover:shadow-lg hover:drop-shadow-glow  h-min p-4 ">
+      <p
+        onClick={() => (window.location.href = "/")}
+        className="mr-8 text-mainWhite font-franklin font-black hover:cursor-pointer hover:text-mainGold hover:shadow-lg hover:drop-shadow-glow  h-min p-4 "
+      >
         Impressum
       </p>
     </footer>

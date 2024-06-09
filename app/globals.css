@@ -2,9 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --mainRed: #f20505;
+  --mainDarkGray: #202020;
+}
+
 @font-face {
   font-family: "Franklin Gothic Heavy Regular";
   src: url("/fonts/FranklinGothicHeavyRegular.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
+}
+
+.curve::before {
+  content: "";
+  display: none;
+  position: absolute;
+  border-radius: 100% 0%;
+  width: 25%;
+  height: 116%;
+  background-color: var(--mainRed);
+  transform: translate(159%, -45%) rotate(80deg);
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-container > div {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .card-container > div {
+    width: 31.6%;
+  }
+  .curve::before {
+    display: block;
+  }
 }

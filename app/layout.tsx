@@ -24,7 +24,7 @@ export default function RootLayout({
       </head>
       <body className="flex flex-col justify-between min-h-screen">
         <NavBar />
-        <div className="flex-grow">{children}</div>
+        <div className="flex-grow bg-mainDarkGray">{children}</div>
         <Footer />
       </body>
     </html>
