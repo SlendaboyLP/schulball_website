@@ -22,10 +22,10 @@ export default function NavBar() {
           Home
         </li>
         <li
-          onClick={() => (window.location.href = "/")}
+          onClick={() => (window.location.href = "/cicd")}
           className="mr-2 text-mainWhite font-franklin font-black hover:cursor-pointer hover:text-mainGold hover:shadow-lg hover:drop-shadow-glow  h-min p-4"
         >
-          Info
+          CICD
         </li>
         <li
           onClick={() => (window.location.href = "/")}

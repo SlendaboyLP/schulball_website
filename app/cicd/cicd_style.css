@@ -1,0 +1,14 @@
+.sect {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  position: relative;
+}
+
+.sect:nth-child(2n) {
+  background-color: var(--mainRed);
+}
+
+body {
+  overflow-x: hidden;
+}
