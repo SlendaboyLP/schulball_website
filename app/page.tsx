@@ -1,37 +1,39 @@
 "use client";
 import Image from "next/image";
+import Card from "./Card";
 
 export default function Home() {
   return (
     <>
-      <nav className="w-full flex justify-between bg-mainDarkGray ">
-        <Image
-          src="/logo.png"
-          alt="The Red Carpet Logo"
-          width={160}
-          height={0}
-          className="ml-4 hover:cursor-pointer hover:shadow-lg hover:drop-shadow-glow"
-          onClick={() => {
-            window.location.href = "/";
-          }}
-        />
-
-        <ul className="flex justify-evenly w-1/5 pt-8">
-          <li className="mr-2 text-mainWhite font-franklin font-bold hover:cursor-pointer hover:text-mainGold hover:shadow-lg hover:drop-shadow-glow  h-min p-4" >
-            Home
-          </li>
-          <li className="mr-2 text-mainWhite font-franklin font-bold hover:cursor-pointer hover:text-mainGold hover:shadow-lg hover:drop-shadow-glow  h-min p-4">
-            Info
-          </li>
-          <li className="mr-2 text-mainWhite font-franklin font-bold hover:cursor-pointer hover:text-mainGold hover:shadow-lg hover:drop-shadow-glow  h-min p-4">
-            Kontakt
-          </li>
-        </ul>
-      </nav>
-      <main className="w-full">
-        
+      <main className="w-full bg-mainDarkGray">
+        <div className="flex flex-wrap">
+          <Card
+            src="https://www.sz-ybbs.ac.at/fileadmin/DATA/_processed_/b/3/csm_20240604_GemeindeTV_1_924bf485a7.jpg"
+            title="Ball Fotos"
+            className="w-1/3"
+          />
+          <Card
+            src="https://www.sz-ybbs.ac.at/fileadmin/DATA/_processed_/b/3/csm_20240604_GemeindeTV_1_924bf485a7.jpg"
+            title="Ball Fotos"
+            className="w-1/3"
+          />
+          <Card
+            src="https://www.sz-ybbs.ac.at/fileadmin/DATA/_processed_/b/3/csm_20240604_GemeindeTV_1_924bf485a7.jpg"
+            title="Ball Fotos"
+            className="w-1/3"
+          />
+          <Card
+            src="https://www.sz-ybbs.ac.at/fileadmin/DATA/_processed_/b/3/csm_20240604_GemeindeTV_1_924bf485a7.jpg"
+            title="Ball Fotos"
+            className="w-1/3"
+          />
+          <Card
+            src="https://www.sz-ybbs.ac.at/fileadmin/DATA/_processed_/b/3/csm_20240604_GemeindeTV_1_924bf485a7.jpg"
+            title="Ball Fotos"
+            className="w-1/3"
+          />
+        </div>
       </main>
-      <footer className=""></footer>
     </>
   );
 }
